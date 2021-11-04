@@ -19,33 +19,33 @@ No tests ran
 ## After install
 A new commend ```utest``` is added into ABC to run the test suit.
 You can use ```make test``` in terminal to compile and check all test cases.
-You also can use ```./abc -q "utest"``` to check all test caseswith compiled abc.
+You also can use ```./abc -q "utest"``` to check all test cases with compiled abc.
 
 ## How to write test cases
-- You can start with the [tutorial](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md#top). 
+- You can start with the [tutorial](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md#top).
 - Or you can take the ```extExample/``` as a simple example.
-  1. Put the folder ```extExample/``` under ```src/``` in an ABC project. 
+  1. Put the folder ```extExample/``` under ```src/``` in an ABC project.
   2. Type ```make test``` in terminal.
   3. It should show the info like this:
   ```
   ./abc -q "utest"
-  
+
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   utest is a Catch v2.2.2 host application.
   Run with -? for options
-  
+
   -------------------------------------------------------------------------------
   Catch2 works if this test failed as expected
   -------------------------------------------------------------------------------
   src/extExample/example_test.cc:48
   ...............................................................................
-  
+
   src/extExample/example_test.cc:50: FAILED:
     CHECK( false )
-  
+
   src/extExample/example_test.cc:51: FAILED:
     REQUIRE( false )
-  
+
   ===============================================================================
   test cases: 2 | 1 passed | 1 failed
   assertions: 9 | 7 passed | 2 failed
